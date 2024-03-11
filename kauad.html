@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brazilian's Beyonce</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="icon" type="img" href="img/icon.png" />
+ 
+  <h1>I'm Diva!</h1>
+  <h2>Aqui será mostrado um pouco da pandemia em forma de memes.</h2>     
+  <style>
+    div.size {
+      width: 920px;
+      display: inline-block;
+
+    }
+
+    div.size {
+      width: 41%;
+
+    }
+
+    div.high {
+      width: 41%;
+
+    }
+
+    div.high {
+      width: 920px;
+      display: inline-block;
+
+    }
+
+
+    div.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 8px solid red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h2>Os estudos...</h2>
+  <div class="container" style="width: 100%;">
+    <img src="img/gr.jpg" alt="imagemgr" width="1080" height="720">
+  </div>
+  <br>
+  <h2>O pessoal foi para a rua sem a permição...</h2>
+  <div class="high">
+    <img src="img/ygonamoura.jpg" alt="imagemygona" width="720" height="460">
+  </div>
+  <h2>O twitter parou com o rato frito...</h2>
+  <div class="size">
+    <img src="img/aghata.jpg" alt="imagemaghata" width="580" height="">
+  </div>
+<br>
+  <video width="320" height="240" controls>
+    <source src="ygv.mp4" type="video/mp4">
+  </video>
+  <input name="pesquisaCep" id="pesquisaCep" type="number">
+  <input type="button" name="Pesquisar" onclick="buscarEnderecoNoViaCEP()" value="Pesquisar">
+</body>
+ 
+</html>
+
+<script>
+
+  function buscarEnderecoNoViaCEP() {
+    var componentePesquisaCep = document.getElementById("pesquisaCep");
+    alert("O cep digitado é:" + componentePesquisaCep.value);
+
+    alert("funcionou");
+    const url = 'https://viacep.com.br/';
+  }
+</script>
